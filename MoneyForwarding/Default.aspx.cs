@@ -56,8 +56,8 @@ namespace MoneyForwarding
             var forwardValue = currentValue * Math.Pow((1 + interest / 100), nYears);
             var year = nYears > 1 ? "years" : "year";
 
-            ResultLabel.Text = $"The future value of {currentValue} after {nYears} " +
-                               $"{year} is equal to {forwardValue}";
+            ResultLabel.Text = $"The future value of {currentValue:C} after {nYears:##,###.#} " +
+                               $"{year} is equal to {forwardValue:C}";
 
         }
     }
